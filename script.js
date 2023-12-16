@@ -50,7 +50,7 @@ function switchRight() {
 
 function switchLeft() {
     if (slide === 0) {
-        slide = images.length
+        slide = images.length-1
     }
     img.setAttribute("src", `${images[slide--]}`)
 }
