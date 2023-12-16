@@ -34,13 +34,13 @@ const images = [
 ]
 
 const img = document.createElement("img")
-document.body.prepend(img)
-img.setAttribute("src", `${images[images.length - 1]}`)
+document.body.prepend(img) 
+let slide = 0
+img.setAttribute("src", `${images[slide]}`)
 img.style.width = "400px"
 img.style.height = "285px"
 img.style.marginBottom = "25px"
 
-let slide = 0
 function switchRight() {
     if (slide === images.length) {
         slide = 0
