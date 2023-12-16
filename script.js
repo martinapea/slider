@@ -52,7 +52,7 @@ function switchLeft() {
     if (slide === 0) {
         slide = images.length
     }
-    img.setAttribute("src", `${images[--slide]}`)
+    img.setAttribute("src", `${images[slide--]}`)
 }
 
 buttonRight.addEventListener("click", switchRight)
