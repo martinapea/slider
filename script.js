@@ -58,12 +58,12 @@ function switchLeft() {
 buttonRight.addEventListener("click", switchRight)
 buttonLeft.addEventListener("click", switchLeft)
 
-buttonRight.addEventListener("keydown", (event) => {
+document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
         switchRight()
     }
 })
-buttonLeft.addEventListener("keydown", (event) => {
+document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
         switchLeft()
     }
